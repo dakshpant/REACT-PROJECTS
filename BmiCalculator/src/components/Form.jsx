@@ -56,8 +56,10 @@ const Form = () => {
         let Message = '';
 
         e.preventDefault();
-
-        if (bmiResult < 18.5) {
+        if(weight == 0 || height == 0){
+            Message = 'Please Enter Valid Input'
+        } 
+        else if (bmiResult < 18.5) {
             Message = 'You are Ku-Poshit';
         } else if (bmiResult < 24.9) {
             Message = 'Normal weight(Moj kar)';
