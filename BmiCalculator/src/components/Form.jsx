@@ -7,9 +7,13 @@ import PopUp from './popUp';
 
 const Form = () => {
 
-    const [color1, setColor1] = useState('')
-    const [color2, setColor2] = useState('')
+    // const [color1, setColor1] = useState('')
+    // const [color2, setColor2] = useState('')
     const [color, setColor] = useState('')
+
+    const [isClicked, setIsClicked] = useState('bg-mainGreen')
+    // const [isClickedWomen , setIsClickedWomen] = useState(false)
+    
 
     const [weight, setWeight] = useState(0)
     const [height, setHeight] = useState(0)
@@ -20,14 +24,32 @@ const Form = () => {
     const [openPopUp, setOpenPopUp] = useState(false)
     const [data, setData] = useState('')
 
-    useEffect(() => {
-        document.getElementById('bodyCol').style.backgroundColor = color;
-        // setColor('')
-    }, [color]);
-    useEffect(() => {
-        document.getElementById('bodyCol').style.backgroundColor = color;
-        // setColor('')
-    }, [color]);
+    // useEffect(() => {
+    //     document.getElementById('bodyCol').style.backgroundColor = color;
+    //     document.getElementById('bodyCol').style.backgroundColor = color;
+    //     // setColor('')
+    // }, [color]);
+    // useEffect(() => {
+       
+    //     // setColor('')
+    // }, [color]);
+
+    // const colorChangeMan = ()=>{
+    //     setColor('#0077b6')
+    // }
+    // const colorChangeWomen = ()=>{
+    //     setColor('#bfdbfe')
+    // }
+
+    const handelManClick = ()=>{
+        setIsClicked("bg-blue-200")
+        console.log(isClicked);
+        
+    }
+    const handelWomenClick = ()=>{
+       setIsClicked("bg-pink-200")
+
+    }
 
     let calcBmi = (e) => {
         const bmiResult = (weight / (height * height));
@@ -53,7 +75,7 @@ const Form = () => {
     return (
         <div>
             <div
-             className=' bg-mainGreen pb-54' id='bodyCol'>
+             className={` ${isClicked}`}>
                 <div
                     className='flex justify-center gap-x-20'
                 >
@@ -69,7 +91,7 @@ const Form = () => {
                                 alt="profileImage"
                             />
                             <input
-                                onClick={() => setColor('#bfdbfe')}
+                                onClick={handelManClick}
                                 className='h-auto transform scale-200'
                                 type="radio"
                                 name='radioBtn'
@@ -80,7 +102,7 @@ const Form = () => {
                             className='flex gap-x-6 justify-center items-center'
                         >
                             <input
-                                onClick={() => setColor('#E69DB8')}
+                                onClick={handelWomenClick}
                                 className='h-auto transform scale-200'
                                 type="radio"
                                 name='radioBtn'
@@ -164,7 +186,7 @@ const Form = () => {
                                 <option value="">17</option>
                                 <option value="">18</option>
                                 <option value="">19</option>
-                                <option value="">20</option>
+                                <option value="">20</option>2
                                 <option value="">21</option>
                             </select>
                             <div className='text-5xl bg-white rounded-e-xl  py-0.5 '>
