@@ -75,9 +75,9 @@ const Form = () => {
     }
 
     return (
-        <div>
+        <div className='h-[100vh]'>
             <div
-             className={` ${isClicked}`}>
+             className={`${isClicked}`}>
                 <div
                     className='flex justify-center gap-x-20'
                 >
