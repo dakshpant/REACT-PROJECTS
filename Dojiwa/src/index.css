@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+@theme {
+  --color-btn-text-orange: #ff9431;
+  --shadow-btnBlur: 0px 4px 4px 0px rgb(0, 0, 0, 0, 0.25);
+  --color-blue1: #56c3e8;
+  --color-blue2: #78dafc;
+  --color-orange1: #ff9431;
+}
+.gradientColor {
+  /* background: radial-gradient(ellipse at 100% -75%, rgba(86, 195, 232, 1) 0%, rgba(120, 218, 252, 1) 62%, rgba(255, 148, 49, 1) 100% ); */
+  /* background: linear-gradient(41deg, rgba(255, 148, 49, 1) 17%, rgba(120, 218, 252, 1) 29%, rgba(255, 148, 49, 1) 96%); */
+  background: linear-gradient(
+    33deg,
+    rgba(255, 148, 49, 1) 20%,
+    rgba(86, 195, 232, 1) 37%,
+    rgba(120, 218, 252, 1) 15%,
+    rgba(255, 148, 49, 1) 82%
+  );
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.montserrat-gradientColor {
+  font-family: "Montserrat";
+  font-optical-sizing: auto;
+  line-height: 78px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 880;
+  font-style: normal;
+}
+.textMon {
+  font-family: "Montserrat", Arial, Verdana, Tahoma, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+}
+
+#GradientColor {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(201deg, #050505 1.11%, #4D0061 127.97%);
+}
