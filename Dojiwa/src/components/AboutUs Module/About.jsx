@@ -1,8 +1,10 @@
 import React from 'react'
+import NavBar from '../Common Module/Header/NavBar'
 
 const About = () => {
   return (
-    <div>About
+    <div>
+      <NavBar/>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, qui?</p>
     </div>
     

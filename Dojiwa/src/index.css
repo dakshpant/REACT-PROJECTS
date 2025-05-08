@@ -12,6 +12,12 @@
   --color-blue1: #56c3e8;
   --color-blue2: #78dafc;
   --color-orange1: #ff9431;
+  --color-sec2-h2 : #185E75;
+  --color-HomeCardColor : rgba(36, 36, 36, 0.80);
+  --color-sec3-ColorH1: #56C3E8;
+  --font-Montserrat: 'Montserrat', sans-serif;
+  --color-backgroundSec3:linear-gradient(17deg, #31023D 11.9%, #270331 89.08%);
+  --color-footerBg: #242424;
 }
 .gradientColor {
   /* background: radial-gradient(ellipse at 100% -75%, rgba(86, 195, 232, 1) 0%, rgba(120, 218, 252, 1) 62%, rgba(255, 148, 49, 1) 100% ); */
@@ -48,4 +54,42 @@
 
 #GradientColor {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(201deg, #050505 1.11%, #4D0061 127.97%);
+}
+
+@keyframes flipMagnify {
+  0% {
+    transform: scale(1) rotateY(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotateY(180deg);
+  }
+  100% {
+    transform: scale(1.1) rotateY(180deg);
+  }
+}
+
+/* Apply styles to the image */
+.image-flip {
+  height: 56px; /* same as h-14 */
+  width: 56px;  /* same as w-14 */
+  transition: transform 2.25s ease ;
+}
+
+/* .image-flip:hover {
+  animation: flipMagnify 1.25s ease forwards;
+  animation-iteration-count: 1;
+} */
+.flip-once {
+  animation: flipMagnify 1.25s ease forwards;
+}
+
+.CardGradient:hover{
+  background: linear-gradient(135deg, #6E428F 4.02%, rgba(119, 133, 217, 0.60) 150.26%), radial-gradient(70.71% 70.71% at 50% 50%, rgba(0, 100, 224, 0.25) 0%, rgba(71, 117, 255, 0.00) 100%), radial-gradient(70.71% 70.71% at 50% 50%, rgba(255, 255, 255, 0.44) 0%, rgba(255, 255, 255, 0.00) 100%), #6E428F;
+  /* transition: ease-in-out ;
+transition-delay: 10s;
+  cursor: pointer; */
+}
+.section4End{
+
+  background: linear-gradient(72deg, #050505 -44.85%, #4D0061 107.36%);
 }
