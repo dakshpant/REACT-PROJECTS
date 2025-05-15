@@ -5,7 +5,7 @@ import { Outlet } from 'react-router'
 
 const layout = () => {
     return (
-        <div>
+        <div className='relative'> 
             {/* <NavBar />  */}
             <Outlet />
             <Footer />

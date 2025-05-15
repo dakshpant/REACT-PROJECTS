@@ -18,6 +18,8 @@
   --font-Montserrat: 'Montserrat', sans-serif;
   --color-backgroundSec3:linear-gradient(17deg, #31023D 11.9%, #270331 89.08%);
   --color-footerBg: #242424;
+  --color-purple:#470159;
+  --color-gray:rgba(255, 255, 255, 0.60);
 }
 .gradientColor {
   /* background: radial-gradient(ellipse at 100% -75%, rgba(86, 195, 232, 1) 0%, rgba(120, 218, 252, 1) 62%, rgba(255, 148, 49, 1) 100% ); */
@@ -36,6 +38,7 @@
 
   -webkit-text-fill-color: transparent;
 }
+
 
 .montserrat-gradientColor {
   font-family: "Montserrat";
@@ -92,4 +95,24 @@ transition-delay: 10s;
 .section4End{
 
   background: linear-gradient(72deg, #050505 -44.85%, #4D0061 107.36%);
+}
+
+/* About page */
+.gradientColor2 {
+  background: linear-gradient(
+    22deg,
+    rgba(255, 148, 49, 1) 30%,
+    rgba(86, 195, 232, 1) 37%,
+    rgba(120, 218, 252, 1) 35%,
+    rgba(255, 148, 49, 1) 65%
+  );
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+.gradient2{
+  background: linear-gradient(201deg, #050505 -54.79%, #4D0061 94.43%);
 }

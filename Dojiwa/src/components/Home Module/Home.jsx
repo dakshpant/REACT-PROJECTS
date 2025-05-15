@@ -110,7 +110,7 @@ const Home = () => {
   return (
     <>
       <div>
-        <div className="h-[751px] object-cover bg-center relative pt-6 " style={{ backgroundImage: `url(${purpleBackground}` }}>
+        <div className="lg:h-[751px] md:h-[600px] w-screen sm:h-[475px] object-cover bg-center relative pt-6 " style={{ backgroundImage: `url(${purpleBackground}` }}>
 
           {/* Nav bar */}
           <div className='sticky top-0 left-0 right-0 z-50 '>
@@ -118,26 +118,26 @@ const Home = () => {
           </div>
           {/* Section 1 */}
 
-          <div className='flex-col flex justify-center items-center my-20'>
+          <div className='flex-col flex justify-center items-center lg:my-20 md:my-15 sm:my-10'>
             <div>
-              <button className='text-btn-text-orange shadow-2xl border-[0.5px] font-medium border-btn-text-orange px-4 py-1.5 rounded-full'>AI-Powered Services</button>
+              <button className='text-btn-text-orange shadow-2xl border-[0.5px] md:text-medium sm:text-[10px] border-btn-text-orange md:px-4 md:py-1.5 sm:py-0.5 sm:px-3 rounded-full'>AI-Powered Services</button>
             </div>
-            <div className='my-10'>
-              <h1 className='gradientColor font-extrabold text-6xl text-center'>AI Solutions That <br />
+            <div className='md:my-10 sm:my-5'>
+              <h1 className='gradientColor font-extrabold lg:text-6xl md:text-4xl sm:text-3xl text-center'>AI Solutions That <br />
                 Redefine Creative <br />
                 Workflows</h1>
             </div>
             <div>
-              <p className='textMon text-white text-center'>Create smarter. Localize faster. Elevate effortlessly — <br />with the power of next-gen AI. </p>
+              <p className='font-Montserrat lg:text-[24px] md:text-[18px] sm:text-[15x] text-white text-center'>Create smarter. Localize faster. Elevate effortlessly — <br />with the power of next-gen AI. </p>
             </div>
-            <div className='my-10'>
-              <button className='text-white text-xl bg-btn-text-orange items-center inline-flex rounded-full px-5 py-1.5 hover:bg-transparent hover:text-btn-text-orange transition-all duration-1000 hover:border-1 hover:border-btn-text-orange'>Connect With Us <MdOutlineArrowOutward className='ms-1.5' /> </button>
+            <div className='md:my-10 sm:my-5'>
+              <button className='text-white lg:text-xl md:text-lg sm:text-sm bg-btn-text-orange items-center inline-flex rounded-full px-5 py-1.5 hover:bg-transparent hover:text-btn-text-orange transition-all duration-1000 hover:border-1 hover:border-btn-text-orange'>Connect With Us <MdOutlineArrowOutward className='ms-1.5' /> </button>
             </div>
           </div>
         </div>
         {/* Section 1 wave section */}
-        <div className='relative mb-55'>
-          <div className='absolute top-0 left-0 right-0 z-20'>
+        <div className='relative lg:mb-55 md:mb-35 sm:mb-30'>
+          <div className='absolute top-0 left-0 right-0 z-20 '>
             <Wave
               fill='#3B0D4A'
               paused={false}
@@ -147,7 +147,7 @@ const Home = () => {
                 speed: 0.25,
                 points: 5
               }}
-              className='rotate-180'>
+              className='rotate-180 lg:translate-y-0 lg:scale-y-100 sm:translate-y-[-38px] sm:scale-y-50'>
             </Wave>
           </div>
           <div className='absolute top-0 left-0 right-0 -z-20'>
@@ -160,7 +160,7 @@ const Home = () => {
                 speed: 0.25,
                 points: 5
               }}
-              className='rotate-180'>
+              className='rotate-180 lg:translate-y-0 lg:scale-y-100 translate-y-[-38px] scale-y-60'>
             </Wave>
           </div>
           <div className='absolute top-0 left-0 right-0 -z-30'>
@@ -173,7 +173,7 @@ const Home = () => {
                 speed: 0.25,
                 points: 5
               }}
-              className='rotate-180'>
+              className='rotate-180 lg:translate-y-0 lg:scale-y-100 translate-y-[-38px] scale-y-70'>
             </Wave>
           </div>
         </div>
@@ -181,12 +181,12 @@ const Home = () => {
         {/* Section 2 */}
         <div>
           <div className='container mx-auto'>
-            <div className='flex-col flex justify-center items-center my-20'>
-              <div className='mb-8'>
-                <h2 className='text-sec2-h2 text-[32px] font-bold font-Montserrat'>Where Innovation Meets Imagination</h2>
+            <div className='flex-col flex justify-center items-center lg:my-20 md:my-10 '>
+              <div className='md:mb-8 sm:mb-5'>
+                <h2 className='text-sec2-h2 md:text-[32px] sm:text-3xl font-bold font-Montserrat'>Where Innovation Meets Imagination</h2>
               </div>
-              <div className='mb-8'>
-                <p className='text-[20px]/[28.8px]  text-center font-Montserrat font-light'>At Dojiwa, we don't just build tools — we design intelligent experiences that revolutionize how content is created,
+              <div className='md:mb-8 sm:mb-5'>
+                <p className='md:text-[20px]/[28.8px] sm:text-[18px]/[22.5px] sm:px-5 text-sec2-p  text-center font-Montserrat font-light'>At Dojiwa, we don't just build tools — we design intelligent experiences that revolutionize how content is created,
                   <br />
                   adapted, and shared.
                   <br />
@@ -197,9 +197,9 @@ const Home = () => {
                   Backed by precision, scalability, and a commitment to innovation, we enable brands, studios, and creative teams to break free from traditional constraints and produce content that’s faster, smarter, and more immersive.</p>
               </div>
               <div className='mb-15'>
-                <span className='text-[20px] text-center font-[700] font-Montserrat capitalize'>With Dojiwa, creativity meets its most powerful ally — intelligence.</span>
+                <span className='md:text-[20px] sm:text-[18px] text-center font-[700] font-Montserrat capitalize'>With Dojiwa, creativity meets its most powerful ally — intelligence.</span>
               </div>
-              <div className='flex justify-around items-center gap-x-12'>
+              <div className='flex lg:justify-around items-center md:flex-wrap md:justify-center sm:gap-x-5'>
                 <Card
                   Heading='For Sales & Marketing Teams'
                   Desc1='Deliver hyper-personalized, multilingual'
@@ -217,7 +217,7 @@ const Home = () => {
                   Desc3='tailored content at scale.' />
 
               </div>
-              <div className='mt-20 relative'>
+              <div className='lg:mt-20 md:mt-10 sm:mt-5 relative'>
                 <button className='border text-[16px] font-[700] fonyt-Montserrat capitalize border-btn-text-orange rounded-full text-btn-text-orange px-8 py-1.5 hover:bg-btn-text-orange hover:text-white transition-all duration-1000'>Contact Us For Services</button>
 
                 <img
@@ -243,32 +243,32 @@ const Home = () => {
               speed: 0.22,
               points: 5,
             }}
-            className='mb-[-8px] p-0'>
+            className='md:mb-[-8px] p-0 md:translate-y-0 md:scale-y-100 sm:translate-y-[36px] sm:scale-y-60'>
           </Wave>
           <div className='pt-10 pb-20' style={{ background: `url(${waves}) rgba(42, 3, 53, 1)`, backgroundSize: "cover", height: "auto" }}>
             <div className='container mx-auto'
             >
               <div className='flex flex-col justify-center items-center'>
                 <div className='my-8 text-center'>
-                  <h1 className='text-[#56C3E8] shadow-2xl font-Montserrat text-[32px] capetalize font-[700] mb-4'>Our Services</h1>
-                  <p className='text-[#FFF0E1] text-center font-Montserrat text-[18px] font[400]'>Unleash brilliance—our state-of-the-art AI empowers you to craft, translate, and <br /> transform your content into a global masterpiece."</p>
+                  <h1 className='text-[#56C3E8] shadow-2xl font-Montserrat md:text-[32px] sm:text-3xl capetalize font-[700] mb-4'>Our Services</h1>
+                  <p className='text-[#FFF0E1] text-center font-Montserrat md:text-[18px] sm:text-[16px] font[400]'>Unleash brilliance—our state-of-the-art AI empowers you to craft, translate, and <br /> transform your content into a global masterpiece."</p>
                 </div>
                 {/* Mid Card section */}
-                <div className='flex flex-row gap-12'>
-                  <div className='flex flex-col justify-center items-center gap-y-12'>
-                    <div className='flex justify-center items-center gap-x-12'>
+                <div className='flex lg:flex-row md:flex-col sm:flex-col lg:gap-12 sm:gap-5'>
+                  <div className='flex flex-col justify-center items-center md:gap-y-12 sm:gap-y-3'>
+                    <div className='flex lg:justify-center items-center lg:gap-x-12 sm:gap-x-12'>
                       <Card2 img={faceSwap} heading='Face Swap' desc='Experience realistic transformations with our advanced face-swap technology.' />
                       <Card2 img={lipSync} heading='Lip Syncing' desc='Bring your videos to life with perfectly synchronized lip movements' />
                     </div>
-                    <div className='flex justify-center items-center gap-x-12'>
+                    <div className='flex lg:justify-center items-center lg:gap-x-12 sm:gap-x-12'>
                       <Card2 img={speechToText} heading='Speech to Text' desc='Transform text into immersive, natural-sounding audio.' />
                       <Card2 img={Groups} heading='Translation' desc='Break language barriers with our real-time translation services.' />
                     </div>
 
                   </div>
-                  <div className='h-[565px] w-[671px] rounded-4xl'>
+                  <div className='rounded-4xl lg:w-[550px] flex items-center justify-center sm:m-auto sm:w-[400px] '>
                     <video 
-                    className='h-[565px] w-[671px] rounded-4xl'
+                    className='rounded-4xl  '
                     autoPlay
                     loop
                     muted
@@ -288,18 +288,18 @@ const Home = () => {
               bones: 3,
               points: 5,
             }}
-            className='mb-[-7px] p-0 rotate-180 bg-[#FEF8F1] '>
+            className='md:mb-[-7px] sm:mb-[-72px] p-0 rotate-180 bg-[#FEF8F1] md:translate-y-0 md:scale-y-100 sm:translate-y-[-36px] sm:scale-y-60'>
           </Wave>
         </div>
         {/* Section 4 */}
-        <div className='bg-[#FEF8F1] pb-20'>
+        <div className='bg-[#FEF8F1] md:pb-20 sm:py-10'>
           <div className='container mx-auto w-[1149px] '>
-            <div className='flex flex-col items-center justify-center gap-y-10 '>
-              <h1 className='text-[32px] text-sec2-h2 capitalize font-Montserrat font-[700]'>
+            <div className='flex flex-col sm:items-center sm:justify-center md:gap-y-10 sm:gap-y-5 '>
+              <h1 className='md:text-[32px] sm:text-3xl text-sec2-h2 capitalize font-Montserrat font-[700]'>
                 Frequently asked Questions
               </h1>
-              <div className='container mx-auto flex flex-wrap gap-7'>
-                <div className='flex flex-col gap-10 '>
+              <div className='container mx-auto sm:flex sm:flex-wrap sm:gap-7 sm:justify-center'>
+                <div className='flex flex-col md:gap-10 sm:gap-5 '>
                   {
                     qna1.map((items, index) => {
                       return (
@@ -310,7 +310,7 @@ const Home = () => {
                     })
                   }
                 </div>
-                <div className='flex flex-col gap-10 '>
+                <div className='flex flex-col md:gap-10 sm:gap-5 '>
                   {
                     qna2.map((items, index) => {
                       return (
@@ -328,16 +328,16 @@ const Home = () => {
           </div>
           {/* Section 4 end */}
 
-          <div className='mt-15 m-auto py-15 rounded-[40px] section4End w-[1240px] flex flex-row items-center justify-center relative'>
-            <img className='absolute bottom-0 right-0' src={ellipse1} alt="" />
-            <img className='absolute top-0 left-0' src={ellipse2} alt="" />
-            <img className='absolute bottom-0 left-28' src={ellipse3} alt="" />
-            <img className='absolute bottom-40 right-65 z-0' src={ellipse4} alt="" />
-            <img className='absolute bottom-39 right-60 z-0' src={strike} alt="" />
-            <div className='my-8 items-center z-1'>
-              <h1 className='text-[48px] capitalize font-Montserrat font-[700] text-white'>Experience the Next Era of Creativity</h1>
+          <div className='xl:mt-15 sm:mt-10 m-auto xl:py-15 sm:py-10 xl:mx-20 sm:mx-10 rounded-[40px] section4End flex flex-row items-center justify-center relative'>
+            <img className='absolute xl:bottom-0 xl:right-0 lg:bottom-0 lg:right-0 sm:bottom-[-24px] sm:right-[-29px] lg:scale-100 sm:scale-65' src={ellipse1} alt="" />
+            <img className='absolute xl:top-0 xl:left-0 lg:top-0 lg:left-0 sm:top-[-27px] sm:left-[-35px] lg:scale-100 sm:scale-65' src={ellipse2} alt="" />
+            <img className='absolute xl:bottom-0 xl:left-28 lg:bottom-0 lg:left-28 sm:bottom-[-25px] sm:left-[30px] lg:scale-100 sm:scale-50' src={ellipse3} alt="" />
+            <img className='absolute xl:bottom-40 xl:right-65 lg:bottom-32 lg:right-59 md:bottom-16 md:right-31 sm:bottom-[40px] sm:right-[60px] lg:scale-100 sm:scale-40 z-0' src={ellipse4} alt="" />
+            <img className='absolute xl:bottom-39 xl:right-62 lg:bottom-31 lg:right-55  md:right-28 md:bottom-24  sm:bottom-[72px] sm:right-[50px] lg:scale-100 sm:scale-50 z-0' src={strike} alt="" />
+            <div className='lg:my-8  items-center z-1'>
+              <h1 className='xl:text-[48px] lg:text-[30px] sm:text-2xl capitalize font-Montserrat font-[700] text-white'>Experience the Next Era of Creativity</h1>
 
-              <button className='px-8 py-2 mt-4 rounded-full bg-btn-text-orange text-white text-[18px] font-Montserrat font-[700] flex justify-center m-auto'>Contact Us For Services</button>
+              <button className='md:px-8 md:py-2 md:mt-4 sm:px-4 sm:py-0.5 sm:mt-2 rounded-full bg-btn-text-orange text-white md:text-[18px] sm:text-[14px] font-Montserrat md:font-[700] sm:font[500] flex justify-center m-auto'>Contact Us For Services</button>
             </div>
           </div>
         </div>
