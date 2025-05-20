@@ -22,6 +22,8 @@ import ellipse3 from './Components/images/Ellipse 3.png'
 import ellipse4 from './Components/images/Ellipse 4.png'
 import strike from './Components/images/Image-underline.png'
 import Video from './Components/images/section3Video.mp4'
+import { TypeAnimation } from 'react-type-animation';
+import H1 from './Components/HeadingMotion/h1'
 const Home = () => {
   const [paused1, setPaused1] = useState(true);
   const [paused2, setPaused2] = useState(true);
@@ -122,10 +124,34 @@ const Home = () => {
             <div>
               <button className='text-btn-text-orange shadow-2xl border-[0.5px] md:text-medium sm:text-[10px] border-btn-text-orange md:px-4 md:py-1.5 sm:py-0.5 sm:px-3 rounded-full'>AI-Powered Services</button>
             </div>
-            <div className='md:my-10 sm:my-5'>
-              <h1 className='gradientColor font-extrabold lg:text-6xl md:text-4xl sm:text-3xl text-center'>AI Solutions That <br />
-                Redefine Creative <br />
-                Workflows</h1>
+
+            {/* <motion.div
+             className='md:my-10 sm:my-5'
+             initial={{ opacity: 0, y: 500 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeIn" }}
+             >
+              <H1/>
+             </motion.div> */}
+            <div className=' sm:my-5'>
+              <TypeAnimation
+                className="gradientColor font-extrabold lg:text-7xl md:text-4xl sm:text-3xl text-center"
+                style={{
+                  whiteSpace: 'pre-line',
+                  height: '255px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  flexWrap: 'wrap',
+                }}
+                sequence={[
+                  `AI Solutions That\nRedefine Creative\nWorkflows`, 
+                ]}
+                speed={10}
+                
+                wrapper="span"
+                repeat={0}
+              />
             </div>
             <div>
               <p className='font-Montserrat lg:text-[24px] md:text-[18px] sm:text-[15x] text-white text-center'>Create smarter. Localize faster. Elevate effortlessly — <br />with the power of next-gen AI. </p>
@@ -267,11 +293,11 @@ const Home = () => {
 
                   </div>
                   <div className='rounded-4xl lg:w-[550px] flex items-center justify-center sm:m-auto sm:w-[400px] '>
-                    <video 
-                    className='rounded-4xl  '
-                    autoPlay
-                    loop
-                    muted
+                    <video
+                      className='rounded-4xl  '
+                      autoPlay
+                      loop
+                      muted
                       src={Video}></video>
                   </div>
                 </div>
