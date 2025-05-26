@@ -122,7 +122,7 @@ const Home = () => {
 
           <div className='flex-col flex justify-center items-center lg:my-20 md:my-15 sm:my-10'>
             <div>
-              <button className='text-btn-text-orange shadow-2xl border-[0.5px] md:text-medium sm:text-[10px] border-btn-text-orange md:px-4 md:py-1.5 sm:py-0.5 sm:px-3 rounded-full'>AI-Powered Services</button>
+              <button className='text-btn-text-orange shadow-2xl border-[0.5px]  shadow-white shadow-2xs lg:text-xl md:text-medium sm:text-[10px] border-btn-text-orange md:px-4 md:py-1.5 sm:py-0.5 sm:px-3 rounded-full'>AI-Powered Services</button>
             </div>
 
             {/* <motion.div
@@ -135,7 +135,7 @@ const Home = () => {
              </motion.div> */}
             <div className=' sm:my-5'>
               <TypeAnimation
-                className="gradientColor font-extrabold lg:text-7xl md:text-4xl sm:text-3xl text-center"
+                className="gradientColor font-extrabold lg:text-7xl md:text-4xl sm:text-3xl text-center "
                 style={{
                   whiteSpace: 'pre-line',
                   height: '255px',
@@ -148,7 +148,6 @@ const Home = () => {
                   `AI Solutions That\nRedefine Creative\nWorkflows`, 
                 ]}
                 speed={10}
-                
                 wrapper="span"
                 repeat={0}
               />
