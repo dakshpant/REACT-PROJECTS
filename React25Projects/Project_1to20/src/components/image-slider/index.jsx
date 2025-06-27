@@ -18,7 +18,7 @@ const ImageSlider = ({ url }) => {
       console.log("Erros is", error);
     }
   }
-  console.log(images);
+  // console.log(images);
 
   useEffect(() => {
     fetchImage(url)
@@ -39,17 +39,17 @@ const ImageSlider = ({ url }) => {
   };
 
   return (
-    <div className='mb-50'>
-      <div className='w-[500px] h-[380px]  m-auto py-16 px-4 relative group '>
-        <div className='w-fit h-fit rounded-2xl bg-center bg-cover duration-500 flex justify-center items-center '>
-          {images ? images.map((img,index)=>(
+    <div className=''>
+      <div className='w-[500px] h-[380px]  m-auto py-16 px-4 relative'>
+        <div className='w-fit h-fit rounded-2xl bg-center bg-cover duration-500 flex justify-center items-center overflow-hidden '>
+          {images.length > 0 ?
              <img
-              className='rounded-[0.5rem] shadow-md w-full h-full object-cover'
-              key={index}
-              src={img.download_url}
-              alt={img.author}
-            />
-          )) : <p>Loading...</p>}
+              className='rounded-[0.5rem] shadow-md transition duration-1500 object-cover'
+              key={images[currentSlide]?.id}
+              src={images[currentSlide]?.download_url}
+              alt={images[currentSlide]?.author}
+            />: <p>Lodaing...</p>
+}
 
         </div>
         <div className='absolute top-[62%] left-5 text-2xl rounded-full  text-white cursor-pointer'>
@@ -64,7 +64,7 @@ const ImageSlider = ({ url }) => {
             size={30}
           />
         </div>
-        <div className='flex  top-50 justify-center py-2 relative z-20'>
+        <div className='flex  top-0 justify-center py-2 relative z-20'>
           {images.map((img, Index) => (
             <div
               key={Index}
