@@ -1,4 +1,7 @@
 import Accordion from "./components/accordion"
+import TabTest from "./components/customTabs/tabTest"
+import ModalTest from './components/customModalPopup/modelTest'
+import ProfileFinder from "./components/ProfileFinder"
 import ImageSlider from "./components/image-slider"
 import LightDarkMode from "./components/lightDark-MOde"
 import LoadMoreData from "./components/loadMore_data"
@@ -7,6 +10,7 @@ import RancomColor from "./components/random_color"
 // import ScrollIndicator from "./components/scrollIndicator"
 import Scroll from "./components/scrollIndicator/scroll"
 import SideBar from "./components/sideBar"
+// eslint-disable-next-line no-unused-vars
 import menus from './components/sideBar/data'
 import StarRating from "./components/star-rating"
 function App() {
@@ -44,8 +48,18 @@ function App() {
         <LightDarkMode/>
       </div>
      */}
-      <div>
+
+      {/* <div>
         <Scroll/>
+      </div>
+      <div className="my-10">
+        <TabTest/>
+      </div>
+      <div className="my-10 h-50">
+        <ModalTest/>
+      </div> */}
+      <div className="py-10">
+        <ProfileFinder/>
       </div>
     </div>
   )

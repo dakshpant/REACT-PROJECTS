@@ -17,9 +17,9 @@ const Scroll = () => {
             //     setData(data.products) : null
             if (data && data.products.length && data.products.length > 0) {
                 setDataItem(data.products)
-                console.log(data);
+                // console.log(data);
 
-                console.log(dataItem);
+                // console.log(dataItem);
 
             }
         } catch (error) {
@@ -28,14 +28,14 @@ const Scroll = () => {
 
         }
     }
-    console.log();
+    // console.log();
 
 
     useEffect(() => {
         fetchData(url)
     }, [url])
 
-    console.log()
+    // console.log()
 
     const setScroll = useCallback(() => {
         const scrollHeight = document.documentElement.scrollHeight;
